@@ -20,9 +20,9 @@ with passed darksky API key as enviroment variable.
 
 Options that can be passed:
 
-    - `--city` city name
-    - `--lat` latitude, default 60.59329987
-    - `--lng` longitude, default -1.44250533
+- `--city` city name
+- `--lat` latitude, default 60.59329987
+- `--lng` longitude, default -1.44250533
 
 ## Test
 
