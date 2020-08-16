@@ -1,46 +1,45 @@
 # forecasts
 
-FIXME: my new application.
-
 ## Installation
 
-Download from https://github.com/forecasts/forecasts.
+Download from https://github.com/ougfh/forecasts.
 
-## Usage
-
-FIXME: explanation
-
-Run the project directly:
-
-    $ clojure -m forecasts.core
-
-Run the project's tests (they'll fail until you edit them):
-
-    $ clojure -A:test:runner
+## How to run
 
 Build an uberjar:
 
     $ clojure -A:uberjar
 
-Run that uberjar:
+Run that uberjar with darksky API key:
 
-    $ java -jar forecasts.jar
+    $ DARKSKY_API_KEY=api_key java -jar forecasts.jar
+
+with passed darksky API key as enviroment variable.
 
 ## Options
 
-FIXME: listing of options this app accepts.
+Options that can be passed:
+
+    - `--city` city name
+    - `--lat` latitude, default 60.59329987
+    - `--lng` longitude, default -1.44250533
+
+## Test
+
+Run the project's tests:
+
+    $ clojure -A:test:runner
 
 ## Examples
 
-...
+To see weaher reports from Moscow by city name, run:
 
-### Bugs
+    $ DARKSKY_API_KEY=api_key java -jar forecasts.jar --city Moscow
 
-...
+or by coordinates:
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+    $ DARKSKY_API_KEY=api_key java -jar forecasts.jar --lat 55.751244 --lng 37.618423
+
 
 ## License
 
