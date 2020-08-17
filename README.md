@@ -40,6 +40,16 @@ or by coordinates:
 
     $ DARKSKY_API_KEY=api_key java -jar forecasts.jar --lat 55.751244 --lng 37.618423
 
+## TODO
+
+- Find the hottest month of 2019
+- Use `exclude` parameter in the request to darksy
+- Parameters validation
+- Improve output, use polymorphism instead of println to dynamically adjust the output
+- Java startup time, too slow for CLI
+- Use optional parameters in darksky API, e.x. language, units
+- Use HTTP compression
+- Check for the presence of data in response before use
 
 ## License
 
