@@ -46,6 +46,7 @@ or by coordinates:
 - Use `exclude` parameter in the request to darksy
 - Parameters validation
 - Improve output, use polymorphism instead of println to dynamically adjust the output
+- Separate strings creation and data extraction; can be used translation library to produce an output string
 - Java startup time, too slow for CLI
 - Use optional parameters in darksky API, e.x. language, units
 - Use HTTP compression
